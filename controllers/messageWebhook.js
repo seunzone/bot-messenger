@@ -1,6 +1,6 @@
-const processMessage = require(‘../helpers/processMessage’);
+const processMessage = require('../helpers/processMessage');
 module.exports = (req, res) => {
- if (req.body.object === ‘page’) {
+ if (req.body.object === 'page') {
  req.body.entry.forEach(entry => {
  entry.messaging.forEach(event => {
  if (event.message && event.message.text) {
