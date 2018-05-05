@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- "stable"
+env:
+global:
+ - export NODE_ENV=test
+before_script:
+- npm install

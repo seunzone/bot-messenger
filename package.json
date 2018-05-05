@@ -14,8 +14,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-watch app.js"
+    "start": "babel-watch --exec babel-node server/app.js",
+    "build": "babel server -d server/dist --copy-files --ignore server/dist",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
