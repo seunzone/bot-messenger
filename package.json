@@ -1,0 +1,28 @@
+{
+  "name": "bot-messenger",
+  "version": "1.0.0",
+  "description": "A simple messenger bot app",
+  "main": "app.js",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seunzone/bot-messenger.git"
+  },
+  "author": "@seunzone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seunzone/bot-messenger/issues"
+  },
+  "homepage": "https://github.com/seunzone/bot-messenger#readme"
+}
