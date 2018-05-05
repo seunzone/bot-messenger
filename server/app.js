@@ -10,3 +10,10 @@ const verificationController = require('../controllers/verification');
 const messageWebhookController = require('../controllers/messageWebhook');
 app.get('/', verificationController);
 app.post('/', messageWebhookController);
+
+// Setup a default welcome message in JSON format.
+app.get('/api', (req, res) => res.status(200).send({
+    message: 'Hello World',
+  }));
+  
+  
